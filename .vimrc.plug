@@ -1,3 +1,6 @@
+ " Dependencies:
+ " -- Vim Plug
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
