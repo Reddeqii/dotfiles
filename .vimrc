@@ -1,3 +1,7 @@
+" Dependencies:
+" -- My .vimrc.plug (on my GitHub)
+" -- vim.txt (also on GitHub)
+
 set number
 set nowrap
 
