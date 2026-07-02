@@ -21,4 +21,16 @@ Hardware Components:
  -- RAM: 2GB DDR4
  -- Storage: 32GB eMMC
 
+Dependencies:
+ -- Waybar:
+     -- PlayerCTL
+ -- Sway:
+     -- SwayFX
+     -- Kitty
+     -- Rofi
+     -- Waybar
+ -- Vim:
+     -- Vim-Plug
+     -- (just copy BOTH files and run PlugInstall)
+
 Thank you for reading and enjoy the rice!
