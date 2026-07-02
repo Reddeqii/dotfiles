@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+# Dependencies
+# -- Rofi
+# -- Bash
+# -- Kitty
+
 choice=$(printf "Apps\nFile Browser" | rofi -dmenu -p "Launcher")
 
 case $choice in
