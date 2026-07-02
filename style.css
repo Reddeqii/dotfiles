@@ -1,3 +1,8 @@
+/* Dependencies:
+   -- Adwaita Mono
+   -- Font Awesome
+   -- My config.jsonc (on my GitHub)
+*/
 * {
     font-family: 'Adwaita Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
     font-size: 13px;
