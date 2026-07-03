@@ -47,7 +47,7 @@
             "unlocked": ""
         }
     },
-  "mpris": {
+    "mpris": {
 	    "format": "{player_icon} {artist} - {title}",
 	    "format-paused": "{status_icon} {artist} - {title}",
 	    "player-icons": {
@@ -58,7 +58,7 @@
 		    "paused": "⏸"
 	    },
 	// "ignored-players": ["firefox"]
-  },
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -105,7 +105,7 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
-  "group/appsactive": {
+    "group/appsactive": {
 	    "id": "appgroup",
 	    "orientation": "horizontal",
 	    "drawer": {
@@ -116,47 +116,47 @@
 	       "custom/appsformat",
 	       "wlr/taskbar"
 	    ]
-  },
-    "group/media": {
-	"id": "media",
-	"orientation": "horizontal",
-	"drawer": {
-	   "transition-duration": 200,
-	   "transition-left-to-right": true
-	},
-	"modules": [
-	   "mpris",
-	   "group/mediactrl"
-	]
     },
-  "group/left": {
+    "group/media": {
+	    "id": "media",
+	    "orientation": "horizontal",
+	    "drawer": {
+	       "transition-duration": 200,
+	       "transition-left-to-right": true
+	    },
+	    "modules": [
+	       "mpris",
+	       "group/mediactrl"
+	    ]
+    },
+    "group/left": {
 	    "id": "left",
 	    "orientation": "horizontal",
 	    "modules": [
 	        "custom/launcher",
           "group/appsactive"
 	    ]
-  },
+    },
     "custom/mediatoggle": {
-	"id": "mediatog",
-	"format": "   /   ",
-	"on-click": "playerctl play-pause",
-	"tooltip": true,
-	"tooltip-format": "Play/Pause"
+	    "id": "mediatog",
+	    "format": "   /   ",
+	    "on-click": "playerctl play-pause",
+	    "tooltip": true,
+	    "tooltip-format": "Play/Pause"
     },
     "custom/mediaprev": {
-	"id": "mediaprev",
-	"format": "",
-	"on-click": "playerctl previous",
-	"tooltip": true,
-	"tooltip-format": "Previous Track"
+	    "id": "mediaprev",
+	    "format": "",
+	    "on-click": "playerctl previous",
+	    "tooltip": true,
+	    "tooltip-format": "Previous Track"
     },
     "custom/medianext": {
-	"id": "medianext",
-	"format": "",
-	"on-click": "playerctl next",
-	"tooltip": true,
-	"tooltip-format": "Next Track"
+	    "id": "medianext",
+	    "format": "",
+	    "on-click": "playerctl next",
+	    "tooltip": true,
+	    "tooltip-format": "Next Track"
     },
     "group/mediactrl": {
         "id": "mediactrl",
@@ -168,20 +168,20 @@
         ]
     },
     "wireplumber": {
-	"id": "wire",
+	    "id": "wire",
 	"format": "   {volume}%",
 	"format-muted": "",
 	"on-click": "helvum"
     },
     "custom/launcher": {
-	"id": "launcher",
+	    "id": "launcher",
         "format": "   ",
         "tooltip": true,
         "tooltip-format": "Launcher",
         // UNCOMMENT THE LINE BELOW OR INSERT YOUR OWN LINE OF CODE TO ACTIVATE
         // "on-click": "~/scripts/bin/launcher.sh"
     },	
-  "wlr/taskbar": {
+    "wlr/taskbar": {
 	    "id": "apps",
 	    "format": "{icon}",
 	    "icon-size": 14,
@@ -199,12 +199,12 @@
 		    "Firefox Web Browser": "Firefox",
 		    "Foot Server": "Terminal"
 	    }
-  },
-  "custom/appsformat": {
+    },
+    "custom/appsformat": {
 	    "format": "",
 	    "tooltip": true,
 	    "tooltip-format": "Active Apps"
-  },
+    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
