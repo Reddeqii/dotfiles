@@ -1,3 +1,6 @@
+// Dependencies:
+// -- PlayerCTL
+
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
