@@ -10,11 +10,11 @@
     "modules-left": [
         "sway/mode",
         "sway/scratchpad",
-	"group/left",
-	"sway/workspaces"
+	    "group/left",
+	    "sway/workspaces"
     ],
     "modules-center": [
-	"group/media"
+	    "group/media"
     ],
     "modules-right": [
         "group/hardware"
@@ -25,7 +25,7 @@
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "",
-	 "persistent-workspaces": {
+	     "persistent-workspaces": {
              "1": [],  // Leaves an empty bracket to show on all outputs
              "2": []
          }
@@ -40,47 +40,47 @@
         }
     },
     "mpris": {
-	"format": "{player_icon} {artist} - {title}",
-	"format-paused": "{status_icon} {artist} - {title}",
-	"player-icons": {
-		"default": "▶",
-		"mpv": "🎵"
-	},
-	"status-icons": {
-		"paused": "⏸"
-	},
+	    "format": "{player_icon} {artist} - {title}",
+	    "format-paused": "{status_icon} {artist} - {title}",
+	    "player-icons": {
+		    "default": "▶",
+		    "mpv": "🎵"
+	    },
+	    "status-icons": {
+		    "paused": "⏸"
+	    },
 	// "ignored-players": ["firefox"]
     },
     "group/power": {
-	"id": "power",
-	"orientation": "horizontal",
-	"drawer": {
-	    "transition-duration": 200,
-	    "transition-left-to-right": true
-	},
-	"modules": [
-	    "custom/powerformat",
-	    "custom/reboot",
-	    "custom/logout"
-	]
+	    "id": "power",
+	    "orientation": "horizontal",
+	    "drawer": {
+	        "transition-duration": 200,
+	        "transition-left-to-right": true
+	    },
+	    "modules": [
+	        "custom/powerformat",
+	        "custom/reboot",
+	        "custom/logout"
+	    ]
     },
     "custom/powerformat": {
-	"format": "   ",
-	"tooltip": true,
-	"tooltip-format": "Power Off",
-	"on-click": "poweroff"
+        "format": "   ",
+	    "tooltip": true,
+	    "tooltip-format": "Power Off",
+	    "on-click": "poweroff"
     },
     "custom/reboot": {
-	"format": "",
-	"tooltip": true,
-	"tooltip-format": "Reboot",
-	"on-click": "reboot"
+	    "format": "",
+	    "tooltip": true,
+	    "tooltip-format": "Reboot",
+	    "on-click": "reboot"
     },
     "custom/logout": {
-	"format": "    ",
-	"tooltip": true,
-	"tooltip-format": "Log Out",
-	"on-click": "swaymsg exit"
+	    "format": "    ",
+	    "tooltip": true,
+	    "tooltip-format": "Log Out",
+	    "on-click": "swaymsg exit"
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -93,7 +93,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "group/hardware": {
-	"id": "hardware",
+	    "id": "hardware",
         "orientation": "horizontal",
         "modules": [
             "memory",
@@ -129,58 +129,58 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "group/appsactive": {
-	"id": "appgroup",
-	"orientation": "horizontal",
-	"drawer": {
-	    "transition-duration": 200,
-	    "transition-left-to-right": true
-	},
-	"modules": [
-	    "custom/appsformat",
-	    "wlr/taskbar"
-	]
+	    "id": "appgroup",
+	    "orientation": "horizontal",
+	    "drawer": {
+	        "transition-duration": 200,
+	        "transition-left-to-right": true
+	    },
+	    "modules": [
+	        "custom/appsformat",
+	        "wlr/taskbar"
+	    ]
     },
     "group/media": {
-	"id": "media",
-	"orientation": "horizontal",
-	"drawer": {
-	    "transition-duration": 200,
-	    "transition-left-to-right": true
-	},
-	"modules": [
-	    "mpris",
-	    "group/mediactrl"
-	]
+	    "id": "media",
+	    "orientation": "horizontal",
+	    "drawer": {
+	        "transition-duration": 200,
+	        "transition-left-to-right": true
+	    },
+	    "modules": [
+	        "mpris",
+	        "group/mediactrl"
+	    ]
     },
     "group/left": {
-	"id": "left",
-	"orientation": "horizontal",
-	"modules": [
-	    "custom/launcher",
-	    "group/power",
+	    "id": "left",
+	    "orientation": "horizontal",
+	    "modules": [
+	        "custom/launcher",
+	        "group/power",
             "group/appsactive"
-	]
+	    ]
     },
     "custom/mediatoggle": {
-	"id": "mediatog",
-	"format": "   /   ",
-	"on-click": "playerctl play-pause",
-	"tooltip": true,
-	"tooltip-format": "Play/Pause"
+	    "id": "mediatog",
+	    "format": "   /   ",
+	    "on-click": "playerctl play-pause",
+	    "tooltip": true,
+	    "tooltip-format": "Play/Pause"
     },
     "custom/mediaprev": {
-	"id": "mediaprev",
-	"format": "  ",
-	"on-click": "playerctl previous",
-	"tooltip": true,
-	"tooltip-format": "Previous Track"
+	    "id": "mediaprev",
+	    "format": "  ",
+	    "on-click": "playerctl previous",
+	    "tooltip": true,
+	    "tooltip-format": "Previous Track"
     },
     "custom/medianext": {
-	"id": "medianext",
-	"format": "",
-	"on-click": "playerctl next",
-	"tooltip": true,
-	"tooltip-format": "Next Track"
+	    "id": "medianext",
+	    "format": "",
+	    "on-click": "playerctl next",
+	    "tooltip": true,
+	    "tooltip-format": "Next Track"
     },
     "group/mediactrl": {
         "id": "mediactrl",
@@ -192,41 +192,42 @@
         ]
     },
     "wireplumber": {
-	"id": "wire",
-	"format": "   {volume}%",
-	"format-muted": "",
-	"on-click": "helvum"
+	    "id": "wire",
+	    "format": "   {volume}%",
+	    "format-muted": "",
+	    "on-click": "helvum"
     },
     "custom/launcher": {
-	"id": "launcher",
+	    "id": "launcher",
         "format": "   ",
         "tooltip": true,
         "tooltip-format": "Launcher",
-        "on-click": "~/scripts/bin/launcher.sh"
+        // Uncomment the line below or add your own code here, this just launches my script launcher, you can add whatever you want.
+        // "on-click": "~/scripts/bin/launcher.sh"
     },	
     "wlr/taskbar": {
-	"id": "apps",
-	"format": "{icon}",
-	"icon-size": 14,
-	"icon-theme": "Numix-Circle",
-	"tooltip-format": "{title}",
-	"on-click": "activate",
-	"on-click-middle": "close",
-	"ignore-list": [
-	    "Alacritty"
-	],
-	"app_ids-mapping": {
-		"firefoxdeveloperedition": "firefox-developer-edition"
-	},
-	"rewrite": {
-		"Firefox Web Browser": "Firefox",
-		"Foot Server": "Terminal"
-	}
+	    "id": "apps",
+	    "format": "{icon}",
+	    "icon-size": 14,
+	    "icon-theme": "Numix-Circle",
+	    "tooltip-format": "{title}",
+	    "on-click": "activate",
+	    "on-click-middle": "close",
+	    "ignore-list": [
+	        "Alacritty"
+	    ],
+	    "app_ids-mapping": {
+		    "firefoxdeveloperedition": "firefox-developer-edition"
+	    },
+	    "rewrite": {
+		    "Firefox Web Browser": "Firefox",
+		    "Foot Server": "Terminal"
+	    }
     },
     "custom/appsformat": {
-	"format": "",
-	"tooltip": true,
-	"tooltip-format": "Active Apps"
+	    "format": "",
+	    "tooltip": true,
+	    "tooltip-format": "Active Apps"
     },
     "idle_inhibitor": {
         "format": "{icon}",
