@@ -1,3 +1,8 @@
+# WARNING: BE VERY CAREFUL WHEN DEALING WITH YOUR .BASHRC. ONLY COPY PASTE THIS IF YOU ARE FULLY SURE.
+
+# Dependencies:
+# -- Vim
+
 # .bashrc
 
 # Source global definitions
@@ -24,18 +29,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 export EDITOR=vim
 export VISUAL=vim
-# Automatically load system profile variables
-if [ -f /etc/profile.d/flatpak.sh ]; then
-    . /etc/profile.d/flatpak.sh
-fi
-export PATH="$PATH:/var/lib/flatpak/exports/bin:~/.local/share/flatpak/exports/bin"
-alias spotify="flatpak run com.spotify.Client"
+
 
 unset rc
 
-export PATH=$PATH:/home/reddeqii/.spicetify
-export PATH=$PATH:~/.spicetify
-export PATH=$PATH:~/scripts/bin
-export PATH=$PATH:~/.cargo/bin
+
 PS1='[  | \W ]  '
 unset FZF_DEFAULT_OPTS
