@@ -2,11 +2,11 @@
 
 
 
-Hello All!
-This is my rice of SwayFX, taking inspiration from Apple's Liquid Glass theme (without the heavy compositor ofc).
+**Hello All!**
+This is my rice of **SwayFX**, taking inspiration from Apple's Liquid Glass theme (without the heavy compositor ofc).
 This, contrary to belief wasn't that hard, but a magician doesn't reveal his secrets.
 
-Components:
+**_Software Components:_**
  -- Distribution: Fedora 44 Everything NetInstall
  -- DE/WM: SwayFX
  -- Status Bar: Waybar
@@ -15,14 +15,14 @@ Components:
  -- Text Editor: VIM
  -- Audio Visualiser: CAVA
 
-Hardware Components:
+**_Hardware Components:_**
  -- Device: Acer Aspire 1 A111
  -- CPU: Intel Celeron N4000
  -- GPU: Intel Celeron N4000 iGPU
  -- RAM: 2GB DDR4
  -- Storage: 32GB eMMC
 
-Dependencies:
+**_Dependencies:_**
  -- Waybar:
      -- PlayerCTL
  -- Sway:
@@ -34,4 +34,4 @@ Dependencies:
      -- Vim-Plug
      -- (just copy BOTH files and run PlugInstall)
 
-Thank you for reading and enjoy the rice!
+**Thank you for reading and enjoy the rice!**
