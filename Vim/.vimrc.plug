@@ -8,5 +8,13 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin', 'branch': 'main' }
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ap/vim-css-color'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'preservim/vim-markdown'
 
 call plug#end()
+
+let g:vimline_errors_enable = 1
+let g:vimline_errors_show_warnings = 1
