@@ -16,12 +16,11 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu rofi -show drun -theme-str 'sidebar-image { background-image: url("'$(cat ~/.cache/wal/wal)'", height); }'
+set $menu rofi -show drun
+bindsym $mod+Shift+D exec ~/scripts/wallpaper.sh
 ### Output configuration
 #
-exec awww-daemon
-exec awww img ~/Downloads/foggyforest.png
-exec wal -R -n
+exec awww-daemon --no-cache
 #
 # Example configuration:
 #
@@ -75,9 +74,6 @@ bindcode 9 exec true
 
     # Start your launcher
     bindsym $mod+d exec $menu
-
-    bindsym $mod+Shift+d exec ~/scripts/bin/launcher.sh
-
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -166,6 +162,15 @@ bindcode 9 exec true
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+# Volume Up
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.0
+
+# Volume Down
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+# Mute/Unmute
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
 #
 # Scratchpad:
 #
@@ -222,36 +227,16 @@ gaps outer 8
 blur_passes 2
 blur_radius 3
 
+blur enable
+
 default_dim_inactive 0.05
-
-for_window [app_id="waybar_widget"] floating enable, resize set width 650px height 400px, move position center
-
-layer_effects "waybar" blur disable; blur_ignore_transparent enable; shadows disable; corner_radius 0
-
-layer_effects "gtk-layer-shell" {
-    blur disable
-    shadows disable
-    corner_radius 0
-}
 
 corner_radius 12
 
 default_border none
 
-for_window [app_id="kitty"] blur enable; blur_passes 1; blur_radius 2
-
-for_window [title="Space Dodge"] floating enable
-layer_effects "nwg-dock" blur enable; blur_radius 5; blur_brightness 1.0
-
 include /etc/sway/config.d/*
 
-exec waybar -c ~/.config/waybar/mac-config.jsonc -s ~/.config/waybar/mac-style.css > /dev/null 2>&1 &
+exec mako &
 
-exec dunst
-
-exec_always pkill wl-paste
-exec wl-paste --type text --watch cliphist store
-
-exec nwg-dock -r -i 35 -p bottom -a center &!
-
-exec_always autotiling &:
+exec autotiling &
